@@ -16,9 +16,9 @@ social:
   name: Harshit Jain
   email: Harshitj2005@gmail.com
   links:
-    - https://linkedin.com/in/yourprofile  # UPDATE
+    - https://linkedin.com/in/harshitj2005
 
-remote_theme: cotes2004/jekyll-theme-chirpy
+theme: jekyll-theme-chirpy
 
 # Timezone
 timezone: America/New_York
