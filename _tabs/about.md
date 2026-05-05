@@ -3,6 +3,10 @@ layout: page
 title: About
 icon: fas fa-user
 order: 1
+description: >-
+  About Harshit Jain — Associate Principal Engineer at Nagarro with 12+ years
+  building distributed systems, GraphQL APIs, and microservices. Five-time
+  Brightest Mind Award recipient. Based in Pennsylvania, USA.
 ---
 
 ## Hi, I'm Harshit Jain

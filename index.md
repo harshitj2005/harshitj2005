@@ -1,6 +1,13 @@
 ---
 layout: home
 title: Home
+description: >-
+  Harshit Jain — Associate Principal Engineer specializing in distributed systems,
+  GraphQL federation, and microservices architecture. 12+ years building systems
+  that hold under production load.
+image:
+  path: /assets/img/avatar.jpg
+  alt: Harshit Jain
 ---
 
 ## I design systems that hold when everything else breaks.

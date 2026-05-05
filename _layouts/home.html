@@ -1,0 +1,77 @@
+---
+layout: default
+---
+
+<!-- Intro content from index.md body -->
+<div class="home-intro px-1 mb-5">
+  {{ content }}
+</div>
+
+<!-- Post list -->
+{% if site.posts.size > 0 %}
+<div class="home-posts px-1">
+  <h2 class="post-list-heading">Recent Writing</h2>
+  <div id="post-list">
+    {% assign posts = paginator.posts | default: site.posts %}
+    {% for post in posts %}
+    <article class="card-wrapper card mb-3">
+      <a href="{{ post.url | relative_url }}" class="post-preview d-block text-decoration-none p-3">
+        <h3 class="post-title mb-1">{{ post.title }}</h3>
+        <div class="post-meta text-muted small mb-2">
+          <i class="far fa-calendar-alt fa-fw me-1"></i>
+          <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%B %d, %Y" }}</time>
+          {% if post.categories.size > 0 %}
+            <span class="mx-1">·</span>
+            {% for cat in post.categories %}
+              <span class="badge bg-secondary text-white ms-1">{{ cat }}</span>
+            {% endfor %}
+          {% endif %}
+        </div>
+        {% if post.excerpt %}
+        <p class="post-excerpt text-muted mb-0">{{ post.excerpt | strip_html | truncate: 220 }}</p>
+        {% endif %}
+      </a>
+    </article>
+    {% endfor %}
+  </div>
+
+  {% if paginator.total_pages > 1 %}
+  <nav aria-label="Post pagination" class="mt-4">
+    <ul class="pagination justify-content-center">
+      {% if paginator.previous_page %}
+      <li class="page-item">
+        <a class="page-link" href="{{ paginator.previous_page_path | relative_url }}">← Newer</a>
+      </li>
+      {% endif %}
+      <li class="page-item disabled">
+        <span class="page-link">{{ paginator.page }} / {{ paginator.total_pages }}</span>
+      </li>
+      {% if paginator.next_page %}
+      <li class="page-item">
+        <a class="page-link" href="{{ paginator.next_page_path | relative_url }}">Older →</a>
+      </li>
+      {% endif %}
+    </ul>
+  </nav>
+  {% endif %}
+</div>
+{% endif %}
+
+<style>
+  .home-intro h2 { margin-top: 0; }
+  .post-list-heading {
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 0.4rem;
+    margin-bottom: 1.2rem;
+  }
+  .card-wrapper.card {
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transition: border-color 0.2s ease;
+  }
+  .card-wrapper.card:hover { border-color: var(--link-color); }
+  .post-preview { color: inherit; }
+  .post-preview:hover { color: inherit; }
+  .post-title { font-size: 1.1rem; font-weight: 600; color: var(--heading-color); }
+  .post-excerpt { font-size: 0.9rem; line-height: 1.5; }
+</style>
