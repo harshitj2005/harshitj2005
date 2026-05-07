@@ -82,3 +82,60 @@ Joined as Senior Software Engineer with a mandate to stabilize and scale a consu
 - **Email:** [Harshitj2005@gmail.com](mailto:Harshitj2005@gmail.com)
 - **LinkedIn:** [linkedin.com/in/harshitj2005](https://linkedin.com/in/harshitj2005)
 - **Phone:** +1-484-536-9012
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Harshit Jain",
+  "url": "https://harshitj2005.github.io/about/",
+  "image": "https://harshitj2005.github.io/assets/img/avatar.jpg",
+  "email": "Harshitj2005@gmail.com",
+  "jobTitle": "Associate Principal Engineer",
+  "worksFor": {
+    "@type": "Organization",
+    "name": "Nagarro",
+    "url": "https://www.nagarro.com"
+  },
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Kurukshetra University"
+  },
+  "award": "Brightest Mind Award, Nagarro (2019–2023)",
+  "knowsAbout": [
+    "Distributed Systems Architecture",
+    "GraphQL Federation",
+    "Microservices",
+    "NestJS",
+    "Node.js",
+    "TypeScript",
+    "Quantum Computing",
+    "Cloud Architecture",
+    "Camunda BPMN",
+    "Kafka",
+    "RabbitMQ"
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Google Cloud Professional Cloud Architect"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Google Cloud Professional Cloud Developer"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Professional Scrum Master (PSM 1)"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "ICAgile Certified Professional – Foundations of AI"
+    }
+  ],
+  "sameAs": [
+    "https://linkedin.com/in/harshitj2005",
+    "https://github.com/harshitj2005"
+  ]
+}
+</script>

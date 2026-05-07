@@ -2,6 +2,25 @@
 layout: default
 ---
 
+<!-- Person schema — supplements jekyll-seo-tag WebSite schema on home page -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Harshit Jain",
+  "url": "{{ site.url }}/about/",
+  "image": "{{ site.url }}/assets/img/avatar.jpg",
+  "jobTitle": "Associate Principal Engineer",
+  "worksFor": { "@type": "Organization", "name": "Nagarro" },
+  "alumniOf": { "@type": "CollegeOrUniversity", "name": "Kurukshetra University" },
+  "knowsAbout": ["Distributed Systems", "GraphQL", "Microservices", "NestJS", "Quantum Computing", "Cloud Architecture"],
+  "sameAs": [
+    "https://linkedin.com/in/harshitj2005",
+    "https://github.com/harshitj2005"
+  ]
+}
+</script>
+
 <!-- Intro content from index.md body -->
 <div class="home-intro px-1 mb-5">
   {{ content }}

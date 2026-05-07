@@ -12,9 +12,18 @@ baseurl: ""
 github:
   username: harshitj2005
 
+avatar: /assets/img/avatar.jpg
+
 author:
   name: Harshit Jain
+  email: Harshitj2005@gmail.com
   url: https://harshitj2005.github.io
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-paginate
 
 social:
   name: Harshit Jain
